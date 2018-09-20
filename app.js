@@ -24,7 +24,7 @@ socket.on('message', addMessage)
 window.onload = load;
 
 function getMessages() {
-  fetch('http://127.0.0.1:3001/messages')
+  fetch('https://chatapp-217010.appspot.com/messages')
     .then(function (response) {
       return response.json();
     })
@@ -37,7 +37,7 @@ function getMessages() {
 }
 
 function postMessage(message) {
-  fetch('http://127.0.0.1:3001/messages', {
+  fetch('https://chatapp-217010.appspot.com/messages', {
     method: 'POST',
     body: JSON.stringify(message),
     headers:{
