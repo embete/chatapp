@@ -1,31 +1,45 @@
 * {
     box-sizing: border-box;
 }
-content {
+body {
+    font-family: "Arial", serif;
+}
+.content {
     margin: 0 auto;
     max-width: 40rem;
 }
 .messages {
-    padding: 1rem;
+    /* padding: 1rem; */
     width: 40rem;
     max-width: 100%;
     min-height: 80vh;
     border: 2px solid blue;
     margin-bottom: 1rem;
+}
+.wrapper {
     display: grid;
     grid-template-columns: 5rem 2fr;
-    grid-template-rows: 3rem;
-}
-.messages div {
-    border-bottom: 2px solid blue;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
     padding: 1rem;
 }
-form {
-    width: 40rem;
-    max-width: 100%;
-    border: 2px solid blue;
+
+.wrapper:nth-child(odd) {
+    background-color: rgba(0,115,255, 0.2);
+}
+.name {
+    opacity: 0.7;
+}
+.info {
     display: grid;
-    grid-template-columns: 1fr 6rem;
+    grid-template-columns: auto 1fr 1fr;
+    grid-gap: 1rem;
+}
+.numberofpeople {
+    text-align: right;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 1rem;
 }
 #text {
     padding: 1rem;
@@ -34,4 +48,14 @@ form {
 #send {
     background-color: blue;
     color: white;
+}
+#control {
+    display: grid;
+    grid-template-columns: 1fr 6rem;
+    max-width: 100%;
+    width: 40rem;
+    border: 2px solid blue;
+}
+.info {
+    margin-bottom: 2rem;
 }

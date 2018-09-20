@@ -10,16 +10,18 @@
 </head>
 <body>
     <div class="content">
-        <div class="name">
+        <div class="name info">
             <div>Skriver som:</div>
             <div id="name"></div>
+            <div class="numberofpeople">
+                <span>People in this chat: </span>
+                <div id="total"></div>
+            </div>
         </div>
         <div id="messages" class="messages"></div>
-        <div id="controll">
-            <form action="post">
-                <input type="text" id="text" placeholder="write message" autofocus>
-                <input type="button" id="send" value="send">
-            </form>
+        <div id="control">
+            <input type="text" id="text" placeholder="write message" autofocus>
+            <input type="button" id="send" value="send">
         </div>
     </div>
     <script src="app.js"></script>
