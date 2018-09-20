@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+content {
+    margin: 0 auto;
+    max-width: 40rem;
+}
+.messages {
+    padding: 1rem;
+    width: 40rem;
+    max-width: 100%;
+    min-height: 80vh;
+    border: 2px solid blue;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 5rem 2fr;
+    grid-template-rows: 3rem;
+}
+.messages div {
+    border-bottom: 2px solid blue;
+    padding: 1rem;
+}
+form {
+    width: 40rem;
+    max-width: 100%;
+    border: 2px solid blue;
+    display: grid;
+    grid-template-columns: 1fr 6rem;
+}
+#text {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+#send {
+    background-color: blue;
+    color: white;
+}
